@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="icon/icon2/favicon.ico" type="icon/x-icon" />
+    <link rel="stylesheet" href="sdgstyle.css" />
+    <link rel="stylesheet" href="sdgqueries.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <a href="index.html">
+        <div class="logo">SUSTAINIFY</div>
+      </a>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">SDGs</a></li>
+          <li><a href="#organization">Organization</a></li>
+          <li><a href="#news">News</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">SUSTAINIFY</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="togglemenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="togglemenu()">SDGs</a></li>
+          <li>
+            <a href="#organization" onclick="togglemenu()">Organization</a>
+          </li>
+          <li><a href="#news" onclick="togglemenu()">News</a></li>
+        </div>
+      </div>
+    </nav>
+    <!-- Main Information -->
+    <section id="sdg-1">
+      <div class="sdg-container">
+        <div class="main-info">
+          <div class="info-col1">
+            <img src="./assets/E-WEB-Goal-02.png" alt="SDG 1 - No Poverty" />
+          </div>
+          <div class="col-info2">
+            <p>
+              Globally, hunger persists with nearly 1 in 10 of the world's
+              population facing it in 2022, while 2.4 billion people experienced
+              moderate to severe food insecurity.
+              <span class="stat-highlight"
+                >In the same year, nearly 60% of countries worldwide saw
+                significant increases in food prices due to conflicts and
+                disrupted supply chains.</span
+              >
+              Achieving zero hunger requires intensified efforts to transform
+              food systems towards sustainability, resilience, and equity.
+              Furthermore, accelerating improvements in diets, nutrition,
+              health, and hygiene is crucial to meeting the SDG target of
+              halving the number of children suffering from chronic
+              undernutrition.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Organization Info -->
+    <section id="organization">
+      <h1 class="title">Organization & Volunteer</h1>
+      <div class="organization-container swiper">
+        <div class="slide-container">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <a href="https://terminatehunger.org/">
+                <div class="image-box">
+                  <img src="./organization/images (3).png" alt="" />
+                </div>
+                <div class="organization-details">
+                  <div class="name-organization">
+                    <h3 class="name">Terminate Hunger</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card swiper-slide">
+              <a href="https://www.bread.org/">
+                <div class="image-box">
+                  <img src="./organization/bread.png" alt="" />
+                </div>
+                <div class="organization-details">
+                  <div class="name-organization">
+                    <h3 class="name">Bread for the World</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card swiper-slide">
+              <a href="https://www.undp.org/id/indonesia">
+                <div class="image-box">
+                  <img
+                    src="./organization/food-and-agriculture-organization.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="organization-details">
+                  <div class="name-organization">
+                    <h3 class="name">FAO</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="card swiper-slide">
+              <a href="https://www.actionagainsthunger.org/">
+                <div class="image-box">
+                  <img src="./organization/action.png" alt="" />
+                </div>
+                <div class="organization-details">
+                  <div class="name-organization">
+                    <h3 class="name">Action Against Hunger</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- News Info -->
+    <section id="news">
+      <div class="blog-section">
+        <div class="section-content blog">
+          <div class="title">
+            <h2>News</h2>
+          </div>
+          <div class="news-card">
+            <div class="news-card-details">
+              <div class="image-section">
+                <img src="./news/news-sdg2num1.jpg" alt="" />
+              </div>
+              <div class="article">
+                <h4>
+                  Hunger numbers stubbornly high for three consecutive years
+                </h4>
+                <p>
+                  Around 733 million people faced hunger in 2023, equivalent to
+                  one in eleven people globally and one in five in Africa,
+                  according to the latest State of Food Security and Nutrition
+                  in the World (SOFI) report published today by five United
+                  Nations specialized agencies.
+                </p>
+              </div>
+              <div class="blog-view">
+                <a
+                  href="https://www.who.int/news/item/24-07-2024-hunger-numbers-stubbornly-high-for-three-consecutive-years-as-global-crises-deepen--un-report"
+                  class="button"
+                  >Read more</a
+                >
+              </div>
+              <div class="posted-date">
+                <p>Posted on july 24 2024</p>
+              </div>
+            </div>
+            <div class="news-card-details">
+              <div class="image-section">
+                <img src="./news/news-sdg2num2.jpeg" alt="" />
+              </div>
+              <div class="article">
+                <h4>
+                  Achieving SDG 2 without breaching the 1.5 °C threshold: A
+                  global roadmap
+                </h4>
+                <p>
+                  “The Global Roadmap brings solutions and clear outcomes that
+                  we want to implement to contribute to food security and
+                  nutrition goals and ensure we contribute to the 1.5°C agenda,"
+                  said FAO’s Chief Economist, Máximo Torero.
+                </p>
+              </div>
+              <div class="blog-view">
+                <a
+                  href="https://www.fao.org/new-york/news/news-detail/achieving-sdg-2-without-breaching-the-1.5--c-threshold--a-global-roadmap/en"
+                  class="button"
+                  >Read more</a
+                >
+              </div>
+              <div class="posted-date">
+                <p>Posted on January 26 2024</p>
+              </div>
+            </div>
+            <div class="news-card-details">
+              <div class="image-section">
+                <img src="./news/news-sdg2num3.jpg" alt="" />
+              </div>
+              <div class="article">
+                <h4>
+                  Leveraging Partnerships for Sustainable Agrifood Systems
+                </h4>
+                <p>
+                  The 2024 ECOSOC Partnership Forum, held on 30 January,
+                  included a dedicated SDG Action Segment for Goal 2,
+                  co-organized by the Food and Agriculture Organization of the
+                  United Nations (FAO), the UN Major Group for Science and
+                  Technology, and the UN Major Group for Children and Youth.
+                </p>
+              </div>
+              <div class="blog-view">
+                <a
+                  href="https://www.fao.org/sustainable-development-goals-helpdesk/transform/news-detail/leveraging-partnerships-for-sustainable-agrifood-systems--the-sdg-action-segment-for-goal-2-at-the-2024-ecosoc-partnership-forum/en"
+                  class="button"
+                  >Read more</a
+                >
+              </div>
+              <div class="posted-date">
+                <p>Posted on February 1 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SDG IMG -->
+    <section id="card-container">
+      <div class="sdg-card-container1">
+        <div class="sdg-card">
+          <a href="sdg1.html">
+            <img src="./assets/E-WEB-Goal-01.png" alt="sdg1" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg3.html">
+            <img src="./assets/E-WEB-Goal-03.png" alt="sdg3" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg4.html">
+            <img src="./assets/E-WEB-Goal-04.png" alt="sdg4" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg5.html">
+            <img src="./assets/E-WEB-Goal-05.png" alt="sdg5" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg6.html">
+            <img src="./assets/E-WEB-Goal-06.png" alt="sdg6" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg7.html">
+            <img src="./assets/E-WEB-Goal-07.png" alt="sdg7" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg8.html">
+            <img src="./assets/E-WEB-Goal-08.png" alt="sdg8" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg9.html">
+            <img src="./assets/E-WEB-Goal-09.png" alt="sdg9" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg10.html">
+            <img src="./assets/E-WEB-Goal-10.png" alt="sdg10" />
+          </a>
+        </div>
+      </div>
+      <div class="sdg-card-container1">
+        <div class="sdg-card">
+          <a href="sdg11.html">
+            <img src="./assets/E-WEB-Goal-11.png" alt="sdg11" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg12.html">
+            <img src="./assets/E-WEB-Goal-12.png" alt="sdg12" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg13.html">
+            <img src="./assets/E-WEB-Goal-13.png" alt="sdg13" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg14.html">
+            <img src="./assets/E-WEB-Goal-14.png" alt="sdg14" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg15.html">
+            <img src="./assets/E-WEB-Goal-15.png" alt="sdg15" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg16.html">
+            <img src="./assets/E-WEB-Goal-16.png" alt="sdg16" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg17.html">
+            <img src="./assets/E-WEB-Goal-17.png" alt="sdg17" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <img src="./assets/lOGGO-sdgs.jpeg" alt="sdgLogo" />
+        </div>
+      </div>
+    </section>
+    <!-- Mobile SDG IMG -->
+    <section id="card-container-mobile">
+      <div class="sdg-card-container1">
+        <div class="sdg-card">
+          <a href="sdg1.html">
+            <img src="./assets/E-WEB-Goal-01.png" alt="sdg1" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg3.html">
+            <img src="./assets/E-WEB-Goal-03.png" alt="sdg3" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg4.html">
+            <img src="./assets/E-WEB-Goal-04.png" alt="sdg4" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg5.html">
+            <img src="./assets/E-WEB-Goal-05.png" alt="sdg5" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg6.html">
+            <img src="./assets/E-WEB-Goal-06.png" alt="sdg6" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg7.html">
+            <img src="./assets/E-WEB-Goal-07.png" alt="sdg7" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg8.html">
+            <img src="./assets/E-WEB-Goal-08.png" alt="sdg8" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg9.html">
+            <img src="./assets/E-WEB-Goal-09.png" alt="sdg9" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg10.html">
+            <img src="./assets/E-WEB-Goal-10.png" alt="sdg10" />
+          </a>
+        </div>
+
+        <div class="sdg-card">
+          <a href="sdg11.html">
+            <img src="./assets/E-WEB-Goal-11.png" alt="sdg11" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg12.html">
+            <img src="./assets/E-WEB-Goal-12.png" alt="sdg12" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg13.html">
+            <img src="./assets/E-WEB-Goal-13.png" alt="sdg13" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg14.html">
+            <img src="./assets/E-WEB-Goal-14.png" alt="sdg14" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg15.html">
+            <img src="./assets/E-WEB-Goal-15.png" alt="sdg15" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg16.html">
+            <img src="./assets/E-WEB-Goal-16.png" alt="sdg16" />
+          </a>
+        </div>
+        <div class="sdg-card">
+          <a href="sdg17.html">
+            <img src="./assets/E-WEB-Goal-17.png" alt="sdg17" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
