@@ -291,6 +291,90 @@ a:hover::after {
   font-family: sans-serif;
 }
 
+/* Event section */
+
+.blog-section {
+  width: 100%;
+}
+
+.section-content {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.event-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+
+.event-card-details {
+  width: 100%;
+  background-color: #f7f7f7;
+  position: relative;
+  /* Add height to ensure consistent card heights */
+  height: 100%;
+}
+
+/* Add fixed height container for images */
+.image-section {
+  width: 100%;
+  height: 250px; /* Fixed height for all image containers */
+  overflow: hidden;
+}
+
+.image-section img {
+  width: 100%;
+  height: 100%; /* Make image fill container */
+  object-fit: cover; /* Maintain aspect ratio while filling container */
+  display: block; /* Remove any unwanted spacing */
+}
+
+.article {
+  padding: 15px 20px;
+}
+
+.article h4 {
+  font-size: 24px;
+  color: #4a4a4a;
+  margin-bottom: 10px; /* Add consistent spacing */
+}
+
+.article p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #6a6a6a;
+  line-height: 1.5; /* Improve readability */
+}
+
+.blog-view a {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #25c5c5;
+  padding: 8px 15px;
+  margin-left: 20px;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.blog-view a:hover {
+  background-color: #1fa8a8; /* Darker shade for hover */
+}
+
+.posted-date p {
+  color: white; /* Changed from black for better contrast */
+  font-weight: 600;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  padding: 6px 15px;
+  background-color: #25c5c5;
+  margin: 0; /* Remove default paragraph margin */
+}
+
 /* Contact section */
 .alert {
   background: #abf7b1;

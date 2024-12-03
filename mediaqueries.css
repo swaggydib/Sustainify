@@ -11,6 +11,11 @@
     height: 15vh;
     padding: 0 20px;
   }
+
+  .event-card {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -47,6 +52,19 @@
     width: 100%;
   }
 
+  .event-card {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+
+  .image-section {
+    height: 200px;
+  }
+
+  .article h4 {
+    font-size: 20px;
+  }
+
   .contact-wrapper {
     grid-template-columns: 1fr;
   }
@@ -72,6 +90,24 @@
 
   .title {
     font-size: 24px;
+  }
+
+  .article h4 {
+    font-size: 18px;
+  }
+
+  .article p {
+    font-size: 14px;
+  }
+
+  .blog-view a {
+    margin-left: 15px;
+    padding: 6px 12px;
+  }
+
+  .posted-date p {
+    padding: 4px 10px;
+    font-size: 14px;
   }
 
   .content h3 {
