@@ -16,6 +16,19 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
+
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-section {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -49,7 +62,7 @@
 
   .about-content,
   .about-image {
-    width: 100%;
+    width: 80%;
   }
 
   .event-card {
@@ -71,6 +84,25 @@
 
   .contact-info {
     text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-link {
+    font-size: 14px;
   }
 }
 
@@ -130,5 +162,21 @@
   .info-container p {
     font-size: 100;
     float: right;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }
