@@ -41,7 +41,32 @@
   }
 
   .about-container {
-    padding-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 30px;
+    border: none;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about-image img {
+    max-width: 300px;
   }
 }
 
@@ -56,13 +81,23 @@
   }
 
   .about-container {
-    flex-direction: column;
-    text-align: center;
+    gap: 1.5rem;
   }
 
-  .about-content,
-  .about-image {
-    width: 80%;
+  .title h1 {
+    font-size: 28px;
+  }
+
+  .content h3 {
+    font-size: 18px;
+  }
+
+  .content p {
+    font-size: 15px;
+  }
+
+  .about-image img {
+    max-width: 250px;
   }
 
   .event-card {
@@ -118,6 +153,32 @@
 
   .sdg-card:hover {
     transform: scale(1.05);
+  }
+
+  #about {
+    padding: 30px 10px;
+  }
+
+  .about-container {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .title h1 {
+    font-size: 24px;
+  }
+
+  .content h3 {
+    font-size: 16px;
+  }
+
+  .content p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .about-image img {
+    max-width: 200px;
   }
 
   .title {
