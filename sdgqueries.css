@@ -23,6 +23,19 @@
   .section-content {
     width: 90%;
   }
+
+  .footer-container {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .footer-section {
+    flex: 1 1 calc(50% - 15px);
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
 }
 
 /* Medium Screens (Tablets) */
@@ -136,6 +149,25 @@
   .sdg-card:hover {
     transform: scale(1.15);
   }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
 }
 
 /* Extra Small Screens (Phones) */
@@ -182,6 +214,22 @@
 
   .sdg-card img {
     width: 60px;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-title {
+    font-size: 14px;
+  }
+
+  .footer-link {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
   }
 }
 
