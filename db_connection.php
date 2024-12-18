@@ -1,9 +1,9 @@
 <?php
 // db_connection.php
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'sdg_project';
+$host = 'sustainify_db';
+$username = 'user';
+$password = 'userpassword';
+$database = 'sustainify';
 
 // Create connection
 $conn = new mysqli($host, $username, $password, $database);
