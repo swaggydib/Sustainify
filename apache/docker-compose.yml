@@ -3,7 +3,7 @@ services:
     build: .
     container_name: sustainify_web
     ports:
-      - "80:80"
+      - "80:80" # Expose port 8080 to access the web server
     volumes:
       - D:/Sustainify:/var/www/html # Mount the local directory to the web server container's directory
     depends_on:

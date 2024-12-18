@@ -239,56 +239,66 @@ a:hover::after {
   position: relative;
   width: 100%;
   min-height: 100vh;
-
-  padding: 20px;
-  background-image: linear-gradient(to right, #ddd, #f0f0f0);
+  padding: 50px 20px;
+  background-image: linear-gradient(to right, #edf2f7, #f8f9fa);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-container {
   width: 90%;
   max-width: 1200px;
   display: flex;
-  margin: auto;
-  padding-top: 100px;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .about-content {
   flex: 1;
+  text-align: left;
+}
+
+.title h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+  border-left: 4px solid #0f17ff;
+  padding-left: 15px;
+}
+
+.content h3 {
+  font-size: 24px;
+  color: #2763ff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
 .about-image {
   flex: 1;
+  text-align: center;
 }
 
 .about-image img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .about-image img:hover {
-  transform: scale(1.05);
-}
-
-.title {
-  text-transform: uppercase;
-  font-size: 32px;
-  font-weight: bold;
-  color: #333;
-}
-
-.content h3 {
-  margin-top: 20px;
-  font-size: 22px;
-  color: #444;
-}
-
-.content p {
-  margin-top: 10px;
-  font-size: 18px;
-  line-height: 1.6;
-  font-family: sans-serif;
+  transform: scale(1.1);
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Event section */
