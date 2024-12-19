@@ -31,7 +31,7 @@ $sdg_results = $conn->query($sdg_query);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SDG <?php echo $sdg_id; ?></title>
     <link rel="icon" href="icon/iconLogo/Logo.ico" type="icon/x-icon" />
-    <link rel="stylesheet" href="sdgstyle.css" />
+    <link rel="stylesheet" href="sdgstyle.css?v=<?php echo time(); ?>" />
     <link rel="stylesheet" href="sdgqueries.css" />
     <link rel="stylesheet" href="swiper-bundle.min.css" />
   </head>
