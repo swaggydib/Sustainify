@@ -1,8 +1,8 @@
 <?php
 // db_connection.php
-$host = 'sustainify_db';
-$username = 'user';
-$password = 'userpassword';
+$host = 'localhost';
+$username = 'root';
+$password = '';
 $database = 'sustainify';
 
 // Create connection
