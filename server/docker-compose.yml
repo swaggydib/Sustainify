@@ -1,0 +1,44 @@
+services:
+  web:
+    build: .
+    container_name: sustainify_web
+    ports:
+      - "8080:80" # Expose port 8080 to access the web server
+    volumes:
+      - D:/Sustainify:/var/www/html # Mount the local directory to the web server container's directory
+    depends_on:
+      - sustainify_db
+    networks:
+      - sustainify_network
+
+  sustainify_db: # New name for the database container
+    image: mysql:5.7
+    container_name: sustainify_db # Specify container name explicitly
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: sustainify
+      MYSQL_USER: user
+      MYSQL_PASSWORD: userpassword
+    ports:
+      - "3306:3306" # Expose MySQL for phpMyAdmin
+    networks:
+      - sustainify_network
+
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      PMA_HOST: sustainify_db # Update the host to match the new database container name
+      MYSQL_ROOT_PASSWORD: rootpassword
+    ports:
+      - "8081:80" # Access phpMyAdmin on port 8081
+    depends_on:
+      - sustainify_db
+    networks:
+      - sustainify_network
+
+networks:
+  sustainify_network:
+    driver: bridge

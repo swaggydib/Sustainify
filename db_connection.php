@@ -3,7 +3,7 @@
 $host = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'sdg_project';
+$database = 'sustainify';
 
 // Create connection
 $conn = new mysqli($host, $username, $password, $database);

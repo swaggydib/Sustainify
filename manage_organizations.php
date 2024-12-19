@@ -66,22 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $error_message = "Error deleting organization: " . $conn->error;
         }
         $delete_query->close();
-    }elseif (isset($_POST['connect_sdg_organization'])) {
-        $sdg_id = intval($_POST['sdg_id']);
-        $organization_id = intval($_POST['organization_id']);
-
-        // Insert into sdg_organization table
-        $insert_query = $conn->prepare("INSERT INTO sdg_organization (sdg_id, organization_id) VALUES (?, ?)");
-        $insert_query->bind_param("ii", $sdg_id, $organization_id);
-
-        if ($insert_query->execute()) {
-            $success_message = "SDG successfully connected to Organization!";
-        } else {
-            $error_message = "Error connecting SDG and Organization: " . $conn->error;
-        }
-        $insert_query->close();
     }
-
 }
 
 // Fetch Organizations
