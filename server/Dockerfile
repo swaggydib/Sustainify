@@ -2,7 +2,7 @@
 FROM php:7.4-apache
 
 # Copy website files into Apache's web directory
-COPY ../ /var/www/html/
+COPY . /var/www/html/
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html \
